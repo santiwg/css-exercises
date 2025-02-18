@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -16,6 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding:8px;
 }
 
 input {
@@ -23,4 +27,36 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  margin-top:10px;
+  margin-bottom: 10px;
 }
+
+.header,.footer{
+  display: flex;
+  
+  justify-content: space-between;
+}
+.content{
+  text-align: center;
+}
+
+.right-links,.left-links{
+  list-style-type: none;
+  gap:8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: small;
+}
+.right-links a,.left-links a{
+  text-decoration: none;
+  color:grey;
+}
+.right-links,.left-links{
+  display:flex;
+  flex-direction: row;
+}
+.footer{
+  background-color: rgb(228, 225, 225);
+}
+
+/* Hay varias cosas de este ejemplo que podría haber hecho mejor, por ejemplo usar display:flex en .content para poder usar la propiedad flex*/
